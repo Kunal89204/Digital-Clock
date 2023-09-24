@@ -1,0 +1,82 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    box-sizing: border-box;
+    transition: all 0.35s;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+html, body{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(164, 243, 255);
+}
+
+.clock-box{
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.time-box{
+    padding: 10px;
+    /* border: 1px solid; */
+    border-radius: 20px;
+    width: 110px;
+    background: rgb(255, 254, 254);
+    box-shadow: 2px 2px 0px 1px rgb(0, 140, 255);
+    
+}
+
+.time-box:hover{
+    box-shadow: 8px 8px 0px 1px rgb(140, 255, 0);
+    cursor: pointer;
+}
+
+
+.time{
+    text-align: center;
+    font-size: 60px;
+    background: rgb(0, 114, 245);
+    box-shadow: 0px 0px 15px 1px rgb(0, 255, 242);
+    border-radius: 20px;
+    padding: 10px 10px;
+}
+
+p{
+    text-align: center;
+    color: red;
+    text-shadow: 1px 1px 0px rgb(0, 0, 0) ;
+    padding: 10px 0px 0px 0px;
+    font-size: larger;
+}
+
+#hours{
+    color: red;
+    text-shadow: 2px 2px  0px  white;
+}
+
+#min{
+    color: greenyellow;
+    text-shadow: 3px 3px 0px red;
+}
+
+#sec{
+    color: rgb(249, 6, 197);
+    text-shadow: 2px 2px 0px white;
+}
+
+@media only screen and (max-width:800px){
+    .clock-box{
+        width: 100%;
+    }
+}
