@@ -38,8 +38,20 @@ html, body{
 }
 
 .time-box:hover{
-    box-shadow: 8px 8px 0px 1px rgb(140, 255, 0);
+    box-shadow: 8px 8px 0px 1px rgb(255, 0, 247);
     cursor: pointer;
+}
+
+.time-box:hover #hours{
+    text-shadow: 5px 5px  0px  rgb(246, 255, 0);
+}
+
+.time-box:hover #min{
+    text-shadow: 5px 5px  0px  white;
+}
+
+.time-box:hover #sec{
+    text-shadow: 5px 5px  0px  rgb(0, 255, 251);
 }
 
 
@@ -64,6 +76,8 @@ p{
     color: red;
     text-shadow: 2px 2px  0px  white;
 }
+
+
 
 #min{
     color: greenyellow;
